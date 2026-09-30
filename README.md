@@ -19,7 +19,7 @@ Kartojate šiuos žingsnius **keturis kartus**: `01_baseline_logistine_regresija
 5. Paspauskite **Upload** ir **įkelkite `bank-full.csv`**.  
    Svarbu: šį failą reikia įkelti **į kiekvieną naują Colab sesiją atskirai** (kitas notebook = naujas įkėlimas).
 6. Meniu **Runtime → Run all** (Vykdyti viską). Palaukite, kol visos celės baigs darbą.  
-   `02_catboost` pirmą kartą gali užtrukti ilgiau (įdiegia CatBoost).
+   `02_catboost` užtrunka ilgiau: įdiegia CatBoost, derina hiperparametrus validavimo imtyje, moko ansamblį ir skaičiuoja SHAP.
 
 ---
 
@@ -55,6 +55,8 @@ Po visų keturių notebook’ų turite turėti:
 - `preds_mlp.csv`
 
 (Kartais jie guli poaplankyje `outputs` — tada tiesiog atidarykite jį ir paimkite CSV.)
+
+Jei radote ir `catboost_variantai.csv` — įkelkite jį kartu su keturiais `preds_*.csv` į 05 sesiją. Ten matysis, kaip keitėsi CatBoost rezultatas po derinimo ir kalibracijos.
 
 ---
 
